@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Kumar Sinha | Cybersecurity Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+        }
+
+        /* Header Section */
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #00ccff;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+        header a {
+            color: white;
+            background-color: #00ccff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 204, 255, 0.5);
+        }
+        header a:hover {
+            background-color: #007799;
+            box-shadow: 0 6px 12px rgba(0, 204, 255, 0.7);
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 20px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00ccff;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        h2 {
+            color: #00ccff;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        p, li {
+            color: #b3b3b3;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+        }
+        li {
+            list-style: none;
+        }
+
+        /* Skills Section */
+        #skills .bar {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #333;
+            border-radius: 20px;
+            height: 25px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        #skills .bar div {
+            background: linear-gradient(90deg, #00ccff, #00ffcc);
+            height: 100%;
+            border-radius: 20px;
+            animation: load-skill 2s ease-in-out forwards;
+        }
+        #skills .bar div[data-skill="85"] { width: 85%; }
+        #skills .bar div[data-skill="80"] { width: 80%; }
+        #skills .bar div[data-skill="70"] { width: 70%; }
+        #skills .bar div[data-skill="60"] { width: 60%; }
+        #skills .bar div[data-skill="75"] { width: 75%; }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background-color: rgba(17, 17, 17, 0.9);
+            color: #b3b3b3;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes load-skill {
+            0% { width: 0%; }
+            100% { width: inherit; }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            section {
+                padding: 30px 10px;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Header Section -->
+<header>
+    <h1>Ankit Kumar Sinha (4stersec)</h1>
+    <p>Cybersecurity Specialist | Pentester | Red Teamer</p>
+    <p>Securing the future, one vulnerability at a time.</p>
+    <a href="mailto:ankitkumarsinha213@gmail.com">Hire Me</a>
+</header>
+
+<!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I’m Ankit Kumar Sinha (4stersec), a dedicated cybersecurity professional specializing in:</p>
+    <ul>
+        <li>Network Pentesting</li>
+        <li>Active Directory Security</li>
+        <li>Red Teaming</li>
+        <li>SCADA Hacking</li>
+    </ul>
+    <p>Currently pursuing a BBA along with a diploma in cybersecurity, I actively engage in Capture The Flag (CTF) competitions and web security challenges through PortSwigger’s Web Academy. My passion lies in identifying vulnerabilities and enhancing security measures.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="bar"><div data-skill="85"></div><p>Network Pentesting - 85%</p></div>
+    <div class="bar"><div data-skill="80"></div><p>Active Directory Pentesting - 80%</p></div>
+    <div class="bar"><div data-skill="70"></div><p>Red Teaming - 70%</p></div>
+    <div class="bar"><div data-skill="60"></div><p>SCADA Security (Modbus/VNC) - 60%</p></div>
+    <div class="bar"><div data-skill="75"></div><p>CTF Challenges - 75%</p></div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>CAP - Certified Authorization Professional</li>
+        <li>CNSP - Certified Network Security Professional</li>
+        <li>TCM Security Certifications</li>
+        <li>Craw Cybersecurity Certifications</li>
+        <li>Multiple Udemy Certifications in Web Security</li>
+    </ul>
+    <p>These certifications have equipped me with advanced knowledge and skills to tackle real-world cybersecurity challenges.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects & Walkthroughs</h2>
+    <p>Here are some of my recent projects and walkthroughs:</p>
+    <ul>
+        <li><a href="https://medium.com/@Ankit.0101" target="_blank">KOTH — Tyler Walkthrough on TryHackMe</a></li>
+        <li><a href="https://medium.com/@Ankit.0101" target="_blank">KOTH — Space Jam Walkthrough on TryHackMe</a></li>
+        <li><a href="https://medium.com/@Ankit.0101" target="_blank">KOTH Panda Writeup on TryHackMe</a></li>
+        <li><a href="https://github.com/4stersec" target="_blank">Visit my Github</a></li>
+		<li><a href="#" target="_blank">Updating .......</a></li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's work together! I am open to freelance projects, security consultations, or collaborations.</p>
+    <ul>
+        <li><a href="mailto:ankitkumarsinha213@gmail.com">Email Me</a></li>
+        <li><a href="https://www.linkedin.com/in/ankit-kumar-sinha-490a5b289" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/4stersec" target="_blank">GitHub</a></li>
+    </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Ankit Kumar Sinha | 4stersec</p>
+</footer>
+
+</body>
+</html>
