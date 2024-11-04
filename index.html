@@ -165,7 +165,7 @@
     <a href="#certifications">Certifications</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-    <a href="/will-update.html">dork-searcher</a>
+    <a href="/will-update">dork searcher</a>
 </nav>
 
 <!-- Header Section -->
@@ -192,60 +192,14 @@
 <!-- Skills Section -->
 <section id="skills">
     <h2>Skills</h2>
-    <div class="bar"><div data-skill="85"><p>85%</p></div><p>Network Pentesting</p></div>
-    <div class="bar"><div data-skill="80"><p>80%</p></div><p>Active Directory Pentesting</p></div>
-    <div class="bar"><div data-skill="70"><p>70%</p></div><p>Red Teaming</p></div>
-    <div class="bar"><div data-skill="60"><p>60%</p></div><p>SCADA Security (Modbus/etc)</p></div>
-    <div class="bar"><div data-skill="75"><p>75%</p></div><p>CTF Challenges</p></div>
+    <div class="bar"><div data-skill="85"></div><p>Network Pentesting - 85%</p></div>
+    <div class="bar"><div data-skill="80"></div><p>Active Directory Pentesting - 80%</p></div>
+    <div class="bar"><div data-skill="70"></div><p>Red Teaming - 70%</p></div>
+    <div class="bar"><div data-skill="60"></div><p>SCADA Security (Modbus/VNC) - 60%</p></div>
+    <div class="bar"><div data-skill="75"></div><p>CTF Challenges - 75%</p></div>
 </section>
 
-<style>
-/* Your CSS styles here */
-.bar {
-    width: 80%; /* Adjust width for desired size */
-    margin: 20px auto;
-    background-color: #333;
-    border-radius: 20px;
-    height: 25px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.bar div {
-    background: linear-gradient(90deg, #00ccff, #00ffcc);
-    height: 100%;
-    border-radius: 20px;
-    width: 0; /* Start with width 0 for animation */
-    animation: load-skill 2s ease-in-out forwards; /* Animate the width */
-    position: relative; /* Needed for text positioning */
-}
-
-.bar div p {
-    position: absolute; /* Position text absolutely within the bar */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust position to be centered */
-    color: black; /* Change this to a contrasting color */
-    font-weight: bold; /* Make the text bold */
-    margin: 0; /* Remove default margin */
-    font-size: 0.8rem; /* Adjust font size if necessary */
-}
-
-/* Keyframes for Animations */
-@keyframes load-skill {
-    from { width: 0%; }
-    to { width: inherit; /* Use the width specified by the data-skill attribute */ }
-}
-</style>
-
-<script>
-// Your JavaScript code here
-document.querySelectorAll('.bar div').forEach(function(bar) {
-    const skillLevel = bar.getAttribute('data-skill');
-    bar.style.width = skillLevel + '%'; // Set the width to the skill level
-});
-</script>
-<-- Certifications Section -->
+<!-- Certifications Section -->
 <section id="certifications">
     <h2>Certifications</h2>
     <ul>
